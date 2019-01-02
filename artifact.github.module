@@ -1,0 +1,17 @@
+{
+    "defaultArtifact": {
+        "kind": "default.github",
+        "name": "{{ var "path" }}",
+        "reference": "https://api.github.com/repos/{{ var "repo" }}/contents/{{ var "path" }}",
+        "type": "github/file",
+        "version": "master"
+    },
+    "id": "{{ var "id" }}",
+    "matchArtifact": {
+        "kind": "github",
+        "name": "{{ var "path" }}",
+        "type": "github/file"
+    },
+    "useDefaultArtifact": true,
+    "usePriorExecution": false
+}
