@@ -1,0 +1,19 @@
+    {
+      "clusters": [],
+      "continuePipeline": false,
+      "customHeaders": {
+        "header1": "1",
+        "header2": "2"
+      },
+      "failPipeline": true,
+      "job": "do-nothing",
+      "master": "jenkins-sales",
+      "method": "POST",
+      "name": "Webhook",
+      "parameters": {},
+      "refId": "1",
+      "requisiteStageRefIds": [],
+      "statusUrlResolution": "getMethod",
+      "type": "webhook",
+      "url": "https://gate.sales.armory.io/nothing"
+    }
