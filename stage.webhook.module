@@ -10,7 +10,9 @@
         "VAULT_PATH": "{{ var "vaultPath" ?: "/secrets" }}",
         "VAULT_ROLE": "{{ var "vaultRole" ?: "vaulter" }}",
         "HELM_LABEL_CANARY_TYPE": "{{ var "helmLabelCanaryType" ?: "canary" }}",
-        "K8S_NAMESPACE": "{{ var "namespace" ?: "@application" }}"
+        "K8S_NAMESPACE": "{{ var "namespace" ?: "@application" }}",
+        "judgmentInputs": "{{ var "judgmentInputs" ?: "hello" }}"
+
       },
       "failPipeline": true,
       "job": "do-nothing",
