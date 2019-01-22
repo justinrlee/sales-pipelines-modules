@@ -12,7 +12,6 @@
             "value": "goodbye"
         }
     ],
-    "judgmentInputs": [],
     "name": "Manual Judgment",
     "notifications": [],
     "refId": "{{ var "refId" ?: "1" }}",
