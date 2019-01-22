@@ -2,10 +2,15 @@
     "failPipeline": true,
     "instructions": "{{ var "text" ?: "Is it okay to proceed?" }}",
     "judgmentInputs": [
-        {{ range $i, $v := var "judgmentInputs" ?: [] }}
-        { "value": "{{ . }}" },
-        {{ end }}
-        { "value": "final" }
+        {
+            "value": "hello"
+        },
+        {
+            "value": "today"
+        },
+        {
+            "value": "goodbye"
+        }
     ],
     "name": "Manual Judgment",
     "notifications": [],
