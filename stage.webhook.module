@@ -6,6 +6,9 @@
         "header2": "2",
         "CANARY_DEPLOY_ENABLED": {{ var "canaryDeployEnabled" ?: false }},
         "HELM_LABEL_APP": "{{ var "helmLabelApp" ?: "${trigger[\\\"properties\\\"][\\\"helmPackage\\\"]}-${trigger[\\\"properties\\\"][\\\"branchName\\\"]}" }}",
+        "VAULT_AUTH_PATH": "{{ var "vaultAuthPath" ?: "kubernetes" }}",
+        "VAULT_PATH": "{{ var "vaultPath" ?: "/secrets" }}",
+        "VAULT_ROLE": "{{ var "vaultRole" ?: "vaulter" }}",
         "HELM_LABEL_CANARY_TYPE": "{{ var "helmLabelCanaryType" ?: "canary" }}"
       },
       "failPipeline": true,
