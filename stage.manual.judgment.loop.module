@@ -6,6 +6,9 @@
             "value": "hello"
         },
         {
+            "value": "today"
+        },
+        {
             "value": "goodbye"
         }
     ],
