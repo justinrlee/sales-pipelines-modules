@@ -6,7 +6,7 @@
         "header2": "2",
         "CANARY_DEPLOY_ENABLED": {{ var "canaryDeployEnabled" ?: false }},
         "HELM_LABEL_APP": "{{ var "helmLabelApp" ?: "${trigger[\\\"properties\\\"][\\\"helmPackage\\\"]}-${trigger[\\\"properties\\\"][\\\"branchName\\\"]}" }}",
-        "HELM_LABEL_CANARY_TYPE": "{{ var "helmLabelCanaryType" ?: "canary" }}",
+        "HELM_LABEL_CANARY_TYPE": "{{ var "helmLabelCanaryType" ?: "canary" }}"
       },
       "failPipeline": true,
       "job": "do-nothing",
