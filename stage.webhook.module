@@ -9,7 +9,8 @@
         "VAULT_AUTH_PATH": "{{ var "vaultAuthPath" ?: "kubernetes" }}",
         "VAULT_PATH": "{{ var "vaultPath" ?: "/secrets" }}",
         "VAULT_ROLE": "{{ var "vaultRole" ?: "vaulter" }}",
-        "HELM_LABEL_CANARY_TYPE": "{{ var "helmLabelCanaryType" ?: "canary" }}"
+        "HELM_LABEL_CANARY_TYPE": "{{ var "helmLabelCanaryType" ?: "canary" }}",
+        "K8S_NAMESPACE": "{{ var "namespace" ?: "@application" }}"
       },
       "failPipeline": true,
       "job": "do-nothing",
