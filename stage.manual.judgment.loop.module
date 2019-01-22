@@ -1,6 +1,14 @@
 {
     "failPipeline": true,
     "instructions": "{{ var "text" ?: "Is it okay to proceed?" }}",
+    "judgmentInputs": [
+        {
+            "value": "hello"
+        },
+        {
+            "value": "goodbye"
+        }
+    ],
     "judgmentInputs": [],
     "name": "Manual Judgment",
     "notifications": [],
