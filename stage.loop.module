@@ -1,0 +1,26 @@
+    {
+      "clusters": [],
+      "continuePipeline": false,
+      "customHeaders": {
+        "header1": "1",
+        "header2": "2",
+        "CANARY_DEPLOY_ENABLED": {{ var "canaryDeployEnabled" ?: false }},
+        "HELM_LABEL_APP": "{{ var "helmLabelApp" ?: "${trigger[\\\"properties\\\"][\\\"helmPackage\\\"]}-${trigger[\\\"properties\\\"][\\\"branchName\\\"]}" }}",
+        "VAULT_AUTH_PATH": "{{ var "vaultAuthPath" ?: "kubernetes" }}",
+        "VAULT_PATH": "{{ var "vaultPath" ?: "/secrets" }}",
+        "VAULT_ROLE": "{{ var "vaultRole" ?: "vaulter" }}",
+        "HELM_LABEL_CANARY_TYPE": "{{ var "helmLabelCanaryType" ?: "canary" }}",
+        "K8S_NAMESPACE": "{{ var "namespace" ?: "@application" }}"
+      },
+      "failPipeline": true,
+      "job": "do-nothing",
+      "master": "jenkins-sales",
+      "method": "POST",
+      "name": "Webhook",
+      "parameters": {},
+      "refId": "1",
+      "requisiteStageRefIds": [],
+      "statusUrlResolution": "getMethod",
+      "type": "webhook",
+      "url": "https://gate.sales.armory.io/nothing"
+    }
