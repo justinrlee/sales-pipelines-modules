@@ -1,0 +1,19 @@
+            {
+            "name": "{{ var "name" ?: "Deploy Manifest" }}",
+            "account": "{{ var "account" }}",
+            "cloudProvider": "kubernetes",
+            "manifestArtifactAccount": "{{ var "artifactAccount" ?: "github_justinrlee_sales" }}",
+            "manifestArtifactId": "{{ var "artifactId" }}",
+            "moniker": {
+                "app": "{{ var "moniker" }}"
+            },
+            "refId": "{{ var "refId" ?: "1" }}",
+            "requisiteStageRefIds": {{ var "requisiteStageRefIds" ?: [] }},
+            "source": "artifact",
+            "type": "deployManifest",
+            "manifests": null,
+            "relationships": {
+                "loadBalancers": [],
+                "securityGroups": []
+            }
+            }
