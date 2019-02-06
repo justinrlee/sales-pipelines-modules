@@ -1,1 +1,2 @@
-{{ module "stage.wait.module" }},
+{{ module "stage.wait.module" "refId" "6" }},
+{{ module "stage.wait.module" "refId" "7" }}
