@@ -2,7 +2,7 @@
     "application": "workspace",
     "name": "{{ var "pname" ?: "Hello" }}",
     "keepWaitingPipelines": false,
-    "lastModifiedBy": "admin",
+    "lastModifiedBy": "justin",
     "limitConcurrent": true,
     "stages": [
     {{ 
