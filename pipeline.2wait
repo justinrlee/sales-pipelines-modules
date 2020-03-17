@@ -1,0 +1,17 @@
+{
+    "application": "workspace",
+    "name": "{{ var "pname" ?: "Hello" }}",
+    "keepWaitingPipelines": false,
+    "lastModifiedBy": "justin",
+    "limitConcurrent": true,
+    "stages": [
+    {{ 
+      module "stage.wait.module" 
+      "waitname" "Test"
+    }},
+    {{
+      module "stage.wait.module" 
+      "waitname" "Test 2"
+    }}
+    ]
+  }
