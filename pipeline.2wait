@@ -7,7 +7,7 @@
     "stages": [
     {{ 
       module "stage.wait.module" 
-      "waitname" "Test"
+      "waitname" "{{ var "thing" }}"
     }},
     {{
       module "stage.wait.module" 
