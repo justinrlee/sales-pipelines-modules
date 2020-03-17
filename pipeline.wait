@@ -8,6 +8,10 @@
     {{ 
       module "stage.wait.module" 
       "waitname" "Test"
+    }},
+    {{
+      module "stage.wait.module" 
+      "waitname" "Test 2"
     }}
     ]
   }
