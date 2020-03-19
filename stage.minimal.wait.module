@@ -1,0 +1,4 @@
+{
+  "name": "{{ var "waitname" ?: "Wait" }}",
+  "type": "wait"
+}

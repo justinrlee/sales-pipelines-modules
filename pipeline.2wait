@@ -1,13 +1,11 @@
 {
     "application": "workspace",
-    "name": "{{ var "pname" ?: "Hello" }}",
-    "keepWaitingPipelines": false,
-    "lastModifiedBy": "justin",
-    "limitConcurrent": true,
+    "name": "test",
+    "a": "{{ makeSlice {{ var "item" }} }}",
     "stages": [
     {{ 
       module "stage.wait.module" 
-      "waitname" "{{ var "thing" }}"
+      "waitname" "hello"
     }},
     {{
       module "stage.wait.module" 
